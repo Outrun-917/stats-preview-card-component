@@ -50,18 +50,18 @@ main .description {
 }
 
 .picture::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    z-index: 20;
-    background-color: #ab5cdb;
-    position: absolute;
-    opacity: .55;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: #ab5cdb;
+  position: absolute;
+  opacity: 0.55;
 }
 
 .picture img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .values {
@@ -83,8 +83,30 @@ main .description {
 }
 
 @media only screen and (max-width: 600px) {
-    main {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  body {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 95%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .picture {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .values {
+    flex-direction: column;
+  }
 }
